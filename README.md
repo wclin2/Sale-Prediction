@@ -29,7 +29,8 @@ We have train (8523) and test (5681) data set, train data set has both input and
 
 
 ## Exploratory Data Analysis
-### Target Variables
+### Univariate Analysis
+#### Target Variables
 ```
 ggplot(train) + 
   geom_density(aes(Item_Outlet_Sales), fill = "lightblue") +
@@ -37,12 +38,17 @@ ggplot(train) +
 ```
 ![](Pictures/1_target_dist_2.png)
 
-We can clearly see that it is a right skewd variable and would need some data transformation to treat its skewness such as log transformation. Then it becomes,
+We can clearly see that it is a right skewd variable and would need some data transformation to treat its skewness such as cube-root transformation. Then it becomes,
 
 ![](Pictures/1_target_dist_1.png)
 
+#### Independent Variables
+![](Pictures/2_weight_visibility_mrp.png)
 
-### Univariate Analysis
+- There seems to be no clear pattern in Item_Weight.
+- Item_Visibility is right-skewed and should be transformed.
+- We can clearly see 4 different distributions for Item_MRP. It is an interesting insight.
+
 ### Bivariate Analysis
 ## Missing Value Treatment
 ## Feature Engineering
