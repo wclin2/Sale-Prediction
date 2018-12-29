@@ -78,7 +78,14 @@ combi = combi %>%
   )
 ```
 
-- In Outlet_Size’s plot, for 4016 observations, Outlet_Size is blank or missing.We will check for this in the bivariate analysis to substitute the missing values in the Outlet_Size.
+- In Outlet_Size’s plot, for 4016 observations, Outlet_Size is blank or missing.We will check for this in the bivariate analysis to substitute the missing values in the Outlet_Size
+
+Let's check the remaining categorical variables,
+
+![](Pictures/5_OutletType_OutletEstablishment.png)
+
+- Lesser number of observations in the data for the outlets established in the year 1998 as compared to the other years.
+- Supermarket Type 1 seems to be the most popular category of Outlet_Type.
 
 
 
