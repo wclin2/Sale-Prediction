@@ -46,9 +46,9 @@ ggplot(train) +
   xlab("Item_Outlet_Sales")
 ```
 
-![Target Distribution](/Pictures/1_taget_dist.png)
+![Target Distribution](/Pictures/)
 
-![First Pic](/Pictures/4_ItemType_OutletId_OutletSize.png)
+![First Pic](/Pictures/1_taget_dist.png)
 
 
 ### Univariate Analysis
