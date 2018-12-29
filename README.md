@@ -45,9 +45,7 @@ ggplot(train) +
   geom_density(aes(Item_Outlet_Sales), fill = "lightblue") +
   xlab("Item_Outlet_Sales")
 ```
-<img align="left" src="Pictures/1_taget_dist.png" width="200" >![taget distribution](iPictures/1_taget_dist.png)
-![Target Distribution](/Pictures/)
-
+<img align="left" src="3_Item_fat_2.png" height="50" >
 
 ### Univariate Analysis
 ### Bivariate Analysis
