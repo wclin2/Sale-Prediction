@@ -62,9 +62,9 @@ We can clearly see that it is a right skewd variable and would need some data tr
 - We can clearly see 4 different distributions for Item_MRP. It is an interesting insight.
 
 #### Independent Variables (Categorical)
-![](Pictures/3_Fat.png)
+![](Pictures/3_fat_outlet_size.png)
 
-In the figure above, ‘LF’, ‘low fat’, and ‘Low Fat’ are the same category and can be combined into one. Similarly we can be done for ‘reg’ and ‘Regular’ into one. Therefore, we use below codes to transform
+- In the Item_Fat_content figure above, ‘LF’, ‘low fat’, and ‘Low Fat’ are the same category and can be combined into one. Similarly we can be done for ‘reg’ and ‘Regular’ into one. Therefore, we use below codes to transform
 
 ```
 combi = combi %>%
@@ -78,9 +78,10 @@ combi = combi %>%
   )
 ```
 
-![](Pictures/4_outlet_size.png)
+- In Outlet_Size’s plot, for 4016 observations, Outlet_Size is blank or missing.We will check for this in the bivariate analysis to substitute the missing values in the Outlet_Size.
 
-In Outlet_Size’s plot, for 4016 observations, Outlet_Size is blank or missing.We will check for this in the bivariate analysis to substitute the missing values in the Outlet_Size.
+
+
 
 
 ### Bivariate Analysis
