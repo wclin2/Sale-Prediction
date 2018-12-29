@@ -45,7 +45,7 @@ ggplot(train) +
   geom_density(aes(Item_Outlet_Sales), fill = "lightblue") +
   xlab("Item_Outlet_Sales")
 ```
-<img align="left" src="Pictures/1_taget_dist.png" width=200 >
+<img align="left" src="Pictures/1_taget_dist.png" width="200" >
 ![Target Distribution](/Pictures/)
 
 
