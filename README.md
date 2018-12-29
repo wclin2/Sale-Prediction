@@ -1,14 +1,4 @@
 # Sale Prediction
-![First Pic](/Pictures/4_ItemType_OutletId_OutletSize.png)
-
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-
-I think you should use an
-`<http://google.com>` element here instead.
-
 
 ## Problem Statement
 The data scientists at BigMart have collected sales data for 1559 products across 10 stores in different cities for the year 2013. Now each product has certain attributes that sets it apart from other products. Same is the case with each store.
@@ -46,6 +36,7 @@ ggplot(train) +
   xlab("Item_Outlet_Sales")
 ```
 ![](Pictures/1_target_dist.png)
+<img align="left" src="Pictures/1_target_dist.png", height="50">
 
 ### Univariate Analysis
 ### Bivariate Analysis
