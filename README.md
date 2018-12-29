@@ -27,6 +27,18 @@ We have train (8523) and test (5681) data set, train data set has both input and
 
 ## Hypothesis
 
+## Load and Combine the data
+
+```
+train = fread("Train_UWu5bXk.csv")
+test = fread("Test_u94Q5KV.csv")
+
+## add Item_Outlet_Sales to test data
+test = test %>% 
+  mutate(Item_Outlet_Sales = NA)
+
+combi = rbind(train, test) # combining train and test datasets
+```
 
 ## Exploratory Data Analysis
 ### Univariate Analysis
@@ -42,12 +54,29 @@ We can clearly see that it is a right skewd variable and would need some data tr
 
 ![](Pictures/1_target_dist_1.png)
 
-#### Independent Variables
+#### Independent Variables (Numerical)
 ![](Pictures/2_weight_visibility_mrp.png)
 
 - There seems to be no clear pattern in Item_Weight.
 - Item_Visibility is right-skewed and should be transformed.
 - We can clearly see 4 different distributions for Item_MRP. It is an interesting insight.
+
+#### Independent Variables (Categorical)
+![](Pictures/3_Fat.png)
+
+In the figure above, ‘LF’, ‘low fat’, and ‘Low Fat’ are the same category and can be combined into one. Similarly we can be done for ‘reg’ and ‘Regular’ into one. Therefore, we use below codes to transform
+
+```
+combi = combi %>%
+  mutate(
+    Item_Fat_Content = case_when(
+      .$Item_Fat_Content == 'LF' ~ 'Low Fat',
+      .$Item_Fat_Content == 'low fat' ~ 'Low Fat',
+      .$Item_Fat_Content == 'reg' ~ 'Regular',
+      TRUE ~ .$Item_Fat_Content
+    )
+  )
+```
 
 ### Bivariate Analysis
 ## Missing Value Treatment
