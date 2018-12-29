@@ -95,6 +95,7 @@ for(i in missing_index){
 ```
 
 **Establishment Year**
+
 ![](Pictures/4.png)
 
 Lesser number of observations in the data for the outlets established in the year 1998 as compared to the other years. It might be caused by poor sales at that year. Therefore, we plot the mean sale in each year and find that the sales in 1998 was indeed lesser than other years.
@@ -102,27 +103,32 @@ Lesser number of observations in the data for the outlets established in the yea
 Also, by looking at the bottom right plot, we can find that in each year, the company tends to establish
 outlets in one location
 
-**Establishment Year**
+**Outlet Location**
+
 ![](Pictures/5.png)
 
 Large number of outlets locate at Tier3 so the total sales in Tier3 is the largest. However, the average sales in Tier2 is the largest. Maybe the company can establish more outlets at Tier2
 
 **Outlet Type**
+
 ![](Pictures/6.png)
 
 Supermarket Type 1 seems to be the most popular category of Outlet_Type. So we might expect that the Supermarket Type 1 should have the best sales, however, we find that Supermarket Type 3 has the best sales
 
 Let's check whether the large amount of sales in Supermarket Type3 is caused by higher price of the products
+
 ![](Pictures/7.png)
 
 We can find that the average prices for each kind of outlets are similar, so we can conclude that people tend to shop at Supermarket Type3
 
 **Item Type**
+
 ![](Pictures/8.png)
 
 From the above plot, we can find that Fruit and Vegetable and Snack Foods have the higher sales no matter in which location.
 
 **Item Visibility anf Item MRP**
+
 ![](Pictures/9.png)
 
 In Item_Visibility vs Item_Outlet_Sales, there is a string of points at Item_Visibility = 0.0 which seems strange as item visibility cannot be completely zero. We can fill these values with the mean of visibility of the same product.
@@ -154,6 +160,7 @@ train = train %>%
 ```
 
 **Fat Content and Outlet Identifier**
+
 ![](Pictures/10.png)
 
 The feature - Item_Fat_Content might not have impact on the prediction of the sales
