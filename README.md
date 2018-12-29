@@ -1,5 +1,5 @@
 # Sale Prediction
-![First Pic](/Pictures/4_ItemType_OutletId_OutletSize.png)
+![First Pic](/Pictures/4_ItemType_OutletId_OutletSize.png =200x20)
 
 As Kanye West said:
 
