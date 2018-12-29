@@ -82,7 +82,7 @@ combi = combi %>%
 
 Let's check the remaining categorical variables,
 
-![](Pictures/5_outlet_type_establishment.png)
+![](Pictures/5_outlettype_establishment.png)
 
 - Lesser number of observations in the data for the outlets established in the year 1998 as compared to the other years.
 - Supermarket Type 1 seems to be the most popular category of Outlet_Type.
