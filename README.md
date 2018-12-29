@@ -78,6 +78,11 @@ combi = combi %>%
   )
 ```
 
+![](Pictures/4_outlet_size.png)
+
+In Outlet_Size’s plot, for 4016 observations, Outlet_Size is blank or missing.We will check for this in the bivariate analysis to substitute the missing values in the Outlet_Size.
+
+
 ### Bivariate Analysis
 ## Missing Value Treatment
 ## Feature Engineering
