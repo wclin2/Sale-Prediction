@@ -18,7 +18,7 @@ The aim is to build a predictive model to find out the sales of each product at 
 More details can be found at [Problem Statement](https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/)
 
 ## Data Description
-We have train (8523) and test (5681) data set, train data set has both input and output variable(s). You need to predict the sales for test data set.
+We have train (8523) and test (5681) data set, train data set has both input and output variable(s).
 
 | Features | Description |
 | --- | --- |
@@ -35,10 +35,19 @@ We have train (8523) and test (5681) data set, train data set has both input and
 | Outlet_Type | Whether the outlet is just a grocery store or some sort of supermarket |
 | Item_Outlet_Sales | Sales of the product in the particulat store. This is the outcome variable to be predicted | 
 
-## Hypothesis Generation
-## Loading Packages and Data
-## Data Structure and Content
+## Hypothesis
+
+
 ## Exploratory Data Analysis
+### Target Variables
+```
+ggplot(train) + 
+  geom_density(aes(Item_Outlet_Sales), fill = "lightblue") +
+  xlab("Item_Outlet_Sales")
+```
+![Target Distribution](/Pictures/1_taget_dist.png)
+
+
 ### Univariate Analysis
 ### Bivariate Analysis
 ## Missing Value Treatment
