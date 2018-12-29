@@ -35,8 +35,12 @@ ggplot(train) +
   geom_density(aes(Item_Outlet_Sales), fill = "lightblue") +
   xlab("Item_Outlet_Sales")
 ```
+![](Pictures/1_target_dist_2.png)
+
+We can clearly see that it is a right skewd variable and would need some data transformation to treat its skewness such as log transformation. Then it becomes,
+
 ![](Pictures/1_target_dist.png)
-<img align="left" src="Pictures/1_target_dist.png", height="50">
+
 
 ### Univariate Analysis
 ### Bivariate Analysis
