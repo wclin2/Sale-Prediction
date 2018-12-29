@@ -39,7 +39,7 @@ ggplot(train) +
 
 We can clearly see that it is a right skewd variable and would need some data transformation to treat its skewness such as log transformation. Then it becomes,
 
-![](Pictures/1_target_dist.png)
+![](Pictures/1_target_dist_1.png)
 
 
 ### Univariate Analysis
