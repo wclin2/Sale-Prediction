@@ -166,4 +166,6 @@ train = train %>%
 From the Fat Content plot, we might conclude that the fat content have little impact on the prediction of the sales.
 From the Outlet Identifier plot, we can see that products - OUT010 and OUT019 have relatively small sales.
 
-##Summary
+## Summary
+
+There are still many things that can be tried to explore more information from the data. And after the feature exploration, we may try generating new features that can capture the unferlying problem the most and select the best model by cross validation.
